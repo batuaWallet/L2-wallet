@@ -1,8 +1,19 @@
 import React, { useCallback } from "react";
 import { Alert, Button, Linking, StyleSheet, View, Text } from "react-native";
-import Constants from 'expo-constants';
+import ethers from "ethers";
 
-// or any pure javascript modules available in npm
+// Matic sdk
+import WalletConnectProvider from "@maticnetwork/walletconnect-provider";
+//import * as Matic from "@maticnetwork/maticjs";
+//import { MaticPOSClient } from "@maticnetwork/maticjs";
+//import { Network } from "@maticnetwork/meta/network";
+
+import * as config from "./config";
+
+const MaticPoSClient = require("@maticnetwork/maticjs").MaticPOSClient;
+//const Matic = require("@maticnetwork/maticjs");
+//const Network = require("@maticnetwork/meta/network");
+//const MaticPOSClient = Matic.MaticPOSClient
 
 const upiApp = "phonepe";
 const payee = "abc@paytm";
@@ -20,7 +31,7 @@ const OpenURLButton = ({ url, children }) => {
 export default function App() {
   return (
     <View style={styles.container}>
-      <OpenURLButton url={paymentUri}>Load up my wallet</OpenURLButton>
+      <OpenURLButton url={paymentUri}>Load up my L2-wallet</OpenURLButton>
     </View>
   );
 }
@@ -29,7 +40,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
     padding: 8,
   },
