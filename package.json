@@ -9,6 +9,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@maticnetwork/maticjs": "^2.0.11",
+    "@maticnetwork/walletconnect-provider": "0.0.1-beta.1",
+    "ethers": "^5.0.17",
     "expo": "~39.0.2",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
