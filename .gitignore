@@ -2,3 +2,4 @@
 notes.md
 **/.env
 *.swp
+**/.expo/**/cache

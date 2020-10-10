@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 27424,
-  "expoServerNgrokUrl": "https://ue-dxs.anonymous.react-native-app.exp.direct",
-  "packagerNgrokUrl": "https://packager.ue-dxs.anonymous.react-native-app.exp.direct",
-  "ngrokPid": 27469
+  "packagerPid": 11262,
+  "expoServerNgrokUrl": "https://ue-dxs.anonymous.l2-wallet.exp.direct",
+  "packagerNgrokUrl": "https://packager.ue-dxs.anonymous.l2-wallet.exp.direct",
+  "ngrokPid": 11283,
+  "webpackServerPort": null
 }
